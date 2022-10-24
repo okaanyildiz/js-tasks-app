@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Todo.js</title>
+</head>
+
+<body>
+    <div class="main-container">
+
+        <!-- INPUT -->
+        <h1 class="header">Welcome!</h1>
+        <h3 class="category-title">CREATE A TASK</h3>
+        <input id="input" type="text" placeholder="e.g. Pay the bills">
+        <h3 class="category-title">PICK A CATEGORY</h3>
+
+        <!-- CATEGORIES -->
+        <div class="category-container">
+            <label>
+                <input type="radio" id="businness-radio" value="business" />
+                <span class="bubble"></span>
+                <div>Business</div>
+            </label>
+            <label>
+                <input type="radio" id="personal-radio" value="personal" />
+                <span class="bubble personal-bubble"></span>
+                <div>Personal</div>
+            </label>
+        </div>
+
+        <button id="add-button" type="button">ADD TASK</button>
+
+        <!-- TASK LIST -->
+        <h3 class="category-title">TODO LIST</h3>
+
+        <section class="task-container">
+
+            <ul class="task-box">
+                <li class="task">
+                    <div class="input-box">
+                        <input class="task-checkbox" type="checkbox">
+                        <span class="bubble"></span>
+                        <label>Buy some lemons</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <button class="delete-btn">DELETE</button>
+                    </div>
+                </li>
+                <li class="task">
+                    <div class="input-box">
+                        <input class="task-checkbox" type="checkbox">
+                        <span class="bubble personal-bubble"></span>
+                        <label>Check mails</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <button class="delete-btn">DELETE</button>
+                    </div>
+                </li>
+            </ul>
+
+        </section>
+
+        <script src="script.js"></script>
+</body>
+
+</html>
